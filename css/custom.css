@@ -1,0 +1,52 @@
+
+/* fh5co customized style */
+
+#fh5co-header {
+  padding: 10px 0;
+}
+#fh5co-header nav {
+  padding: 30px 0;
+}
+#fh5co-header nav ul li a.active, #fh5co-header nav ul li a:focus {
+  background: #9bdf95;
+}
+#fh5co-intro-section {
+  padding: 1.5em;
+}
+#fh5co-main-services-section .services-inner span i {
+  color: #9bdf95;
+  border: 2px solid #9bdf95;
+}
+.contact-info li a {
+  color: #9bdf95;
+}
+.form-control:active, .form-control:focus {
+  border-color: #9bdf95;
+}
+.btn-primary {
+  background: #9bdf95;
+  border: 2px solid #9bdf95;
+}
+
+::-webkit-selection {
+  background: #9bdf95;
+}
+
+::-moz-selection {
+  background: #9bdf95;
+}
+
+::selection {
+  background: #9bdf95;
+}
+
+
+/* self customized style */
+
+.quoted-list .row {
+  padding: 5px;
+}
+
+.about-inner {
+  margin-bottom: 60px;
+}

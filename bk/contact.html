@@ -7,11 +7,11 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>株式会社一丸エンジニアリング</title>
+	<title>Lesser &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Corporate site of Ichimaru Engineering Ltd. Japan" />
-	<meta name="keywords" content="一丸 一丸エンジニアリング Ichimaru Engineering Ltd" />
-	<meta name="author" content="Ichimaru Engineering Ltd." />
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -55,8 +55,6 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- Customized style  -->
-	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -73,14 +71,15 @@
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
-				<a href="index.html"><img src="images/logo_mark_3rows.png" height="100px" alt="Logo"></a>
+				<h1><i class="sl-icon-energy"></i><a href="index.html">Lesser</a></h1>
 				<nav role="navigation">
 					<ul>
-						<li><a href="index.html">Top</a></li>
-						<li><a href="about.html">会社案内</a></li>
-						<li><a href="services.html">事業紹介</a></li>
-						<li><a href="recruit.html">採用情報</a></li>
-						<li><a class="active" href="contact.html">お問い合わせ</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a class="active" href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -90,39 +89,35 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>お問い合わせ</h2>
-					<p><span>- - - - -</span></p>
-          <p>株式会社一丸エンジニアリングに関するお問い合せは、<br>Eメール、または、電話にてご連絡下さい。</p>
+					<h2>Contact</h2>
+					<p><span>Created with <i class="sl-icon-heart"></i> by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></span></p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<h3>お問い合わせ先</h3>
+				<div class="col-md-3">
+					<h3>Contact Info.</h3>
 					<ul class="contact-info">
-						<li>
-              <i class="sl-icon-map"></i>
-              〒270-2253<br>千葉県松戸市日暮5丁目195番地<br>グランディス新八柱908
-            </li>
-						<li><i class="sl-icon-phone"></i>047-323-6110</li>
-						<li><i class="sl-icon-envelope-open"></i><a href="mailto:inquiry@1maru.co.jp">inquiry@1maru.co.jp</a></li>
-						<li><i class="sl-icon-globe-alt"></i><a href="http://www.1maru.co.jp">www.1maru.co.jp</a></li>
+						<li><i class="sl-icon-map"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
+						<li><i class="sl-icon-phone"></i>+ 1235 2355 98</li>
+						<li><i class="sl-icon-envelope-open"></i><a href="#">info@yoursite.com</a></li>
+						<li><i class="sl-icon-globe-alt"></i><a href="#">www.yoursite.com</a></li>
 					</ul>
 				</div>
-				<div class="col-md-8 col-md-push-0 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" placeholder="氏名" type="text">
+								<input class="form-control" placeholder="Name" type="text">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" placeholder="メールアドレス" type="text">
+								<input class="form-control" placeholder="Email" type="text">
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="お問い合わせ内容"></textarea>
+								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12">
@@ -135,6 +130,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="map" data-animate-effect="fadeIn"></div>
 	<footer id="fh5co-footer" role="contentinfo">
 	
 		<div class="container">
@@ -187,6 +183,9 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
