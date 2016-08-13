@@ -5,7 +5,7 @@
   padding: 10px 0;
 }
 #fh5co-header nav {
-  padding: 30px 0;
+  padding: 35px 0;
 }
 #fh5co-header nav ul li a.active, #fh5co-header nav ul li a:focus {
   background: #9bdf95;
@@ -17,6 +17,26 @@
   color: #9bdf95;
   border: 2px solid #9bdf95;
 }
+#fh5co-footer {
+  // background: #ffffff;
+}
+#fh5co-footer ul li a {
+  // color: #ccc;
+}
+footer a {
+  color: #9bdf95;
+}
+footer a:hover, a:active, a:focus {
+  color: #9bdf95;
+}
+
+.testimony a {
+  color: #9bdf95;
+}
+.testimony .quote i {
+  color: #9bdf95;
+}
+
 .contact-info li a {
   color: #9bdf95;
 }
@@ -26,6 +46,10 @@
 .btn-primary {
   background: #9bdf95;
   border: 2px solid #9bdf95;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #76d36e !important;
+  border: 2px solid #76d36e !important;
 }
 
 ::-webkit-selection {
@@ -40,6 +64,11 @@
   background: #9bdf95;
 }
 
+/* bootstrap customized style */
+
+blockquote {
+  border-left: 5px solid #9bdf95;
+}
 
 /* self customized style */
 
@@ -49,4 +78,15 @@
 
 .about-inner {
   margin-bottom: 60px;
+}
+
+#credit {
+  color: rgba(255, 255, 255, 0.09);
+}
+#credit a {
+  color: rgba(255, 255, 255, 0.09);
+}
+
+.dashed {
+  color: #9bdf95;
 }

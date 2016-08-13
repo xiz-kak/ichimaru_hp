@@ -91,7 +91,7 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>会社案内</h2>
-					<p><span>- - - - -</span></p>
+					<p><span class="dashed">- - - - -</span></p>
 				</div>
 			</div>
 			<div class="row">
@@ -100,7 +100,7 @@
 					<div class="row">
 						<div class="col-md-10">
       -->
-							<div class="about-inner">
+							<div class="about-inner" id="overview">
 								<h3>会社概要</h3>
 								<blockquote class="quoted-list">
                   <div class="row">
@@ -143,19 +143,20 @@
 								</blockquote>
 							</div>
 
-							<div class="about-inner">
+							<div class="about-inner" id="greeting">
 								<h3>ご挨拶</h3>
 								<img class="img-responsive" src="images/pic_takashi_kakimoto.jpg" alt="About">
+                <h3><small>代表取締役</small>&nbsp;&nbsp;&nbsp;柿本　孝</h3>
                 <p>
                   こんにちわ〜<br>
                   あふあふあ〜ふのあ〜ふあふ<br>
                   <br>
                   長い文章書くと、こんな感じに左にグッとなるよ。
-                  <br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 							</div>
 
-							<div class="about-inner">
+							<div class="about-inner" id="locations">
 								<h3>本社/事業所　所在地</h3>
           			<div class="row">
           				<div class="col-md-4">
@@ -203,7 +204,7 @@
           			</div>
 							</div>
 
-							<div class="about-inner">
+							<div class="about-inner" id="history">
 								<h3>沿革</h3>
 								<blockquote class="quoted-list">
                   <div class="row">
@@ -256,42 +257,41 @@
 	</div>
 	
 	<footer id="fh5co-footer" role="contentinfo">
-	
+
 		<div class="container">
 			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-				<h3>About Us</h3>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-			</div>
-			<div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-				<h3>Our Services</h3>
+        <h3><a href="about.html">会社案内</a></h3>
 				<ul class="float">
-					<li><a href="#">Web Design</a></li>
-					<li><a href="#">Branding &amp; Identity</a></li>
-					<li><a href="#">Free HTML5</a></li>
-					<li><a href="#">HandCrafted Templates</a></li>
+					<li><a href="about.html#overview">会社概要</a></li>
+					<li><a href="about.html#greeting">ご挨拶</a></li>
+					<li><a href="about.html#locations">本社/事業所　所在地</a></li>
+					<li><a href="about.html#history">沿革</a></li>
 				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+        <h3><a href="services.html">事業紹介</a></h3>
 				<ul class="float">
-					<li><a href="#">Free Bootstrap Template</a></li>
-					<li><a href="#">Free HTML5 Template</a></li>
-					<li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
-					<li><a href="#">HandCrafted Templates</a></li>
-				</ul>
-
-			</div>
-
-			<div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-				<h3>Follow Us</h3>
-				<ul class="fh5co-social">
-					<li><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
-					<li><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-					<li><a href="#"><i class="icon-google-plus"></i> Google Plus</a></li>
-					<li><a href="#"><i class="icon-instagram"></i> Instagram</a></li>
+					<li><a href="services.html#ichihara">市原営業所</a></li>
+					<li><a href="services.html#sakai-hozen">境営業所（保全）</a></li>
+					<li><a href="services.html#sakai-seizo">境営業所（製造）</a></li>
 				</ul>
 			</div>
-			
+			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+        <h3><a href="recruit.html">採用情報</a></h3>
+				<ul class="float">
+					<li><a href="recruit.html#new-graduate">新卒採用</a></li>
+					<li><a href="recruit.html#experienced">中途採用</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+        <h3><a href="contact.html">お問い合わせ</a></h3>
+				<ul class="float">
+					<li><a href="contact.html">お問い合わせ</a></li>
+				</ul>
+			</div>
 			
 			<div class="col-md-12 fh5co-copyright text-center">
-				<p>&copy; 2016 Free HTML5 template. All Rights Reserved. <span>Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images by <a href="http://unsplash.com/" target="_blank">Unsplash</a></span></p>	
+        <p>&copy; <script type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://1maru.co.jp" target="_blank">Ichimaru Engineering Ltd.</a> All Rights Reserved. <span id="credit">Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a></span></p>
 			</div>
 			
 		</div>
