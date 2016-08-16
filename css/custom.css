@@ -13,6 +13,9 @@
 #fh5co-intro-section {
   padding: 1.5em;
 }
+#fh5co-intro-section h2 {
+  font-family: inherit;
+}
 #fh5co-main-services-section .services-inner span i {
   color: #9bdf95;
   border: 2px solid #9bdf95;
@@ -62,6 +65,35 @@ footer a:hover, a:active, a:focus {
 
 ::selection {
   background: #9bdf95;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+  font-family: inherit;
+}
+
+@media screen and (max-width: 992px) {
+  .featured-grid, .featured-grid.featured-grid-2 {
+    margin-bottom: 15px;
+    height: 150px;
+  }
+  #fh5co-intro-section h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-featured-section {
+    padding: 0.5em 0 3em 0;
+  }
+}
+
+#fh5co-offcanvas ul li a:hover {
+  color: #9bdf95;
+}
+#fh5co-offcanvas ul li.active a {
+  color: #9bdf95;
 }
 
 /* bootstrap customized style */
