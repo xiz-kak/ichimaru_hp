@@ -68,8 +68,12 @@
 	</head>
 	<body>
 	
-	
 	<div id="fh5co-page">
+	<div id="loader-bg">
+	  <div id="loader">
+	  	<img src="images/animation_opening.gif" width="480" height="151" alt="Now Loading..." />
+	  </div>
+  </div>
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
@@ -86,15 +90,6 @@
 			</div>
 		</div>
 	</header>
-	<div id="fh5co-intro-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 text-center">
-          <h2>各種機械装置・産業用設備の設計、製作、施工、<br>並びに保全を行っております。</h2>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="fh5co-featured-section">
 		<div class="container">
 			<div class="row">
@@ -135,6 +130,15 @@
 			</div>
 		</div>
 	</div>
+	<div id="fh5co-intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+          <h4>株式会社一丸エンジニアリングは、各種機械装置・産業用設備の設計、製作、施工、並びに保全を行っております。</h4>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<footer id="fh5co-footer" role="contentinfo">
 	
@@ -171,7 +175,7 @@
 			</div>
 			
 			<div class="col-md-12 fh5co-copyright text-center">
-        <p>&copy; <script type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://1maru.co.jp" target="_blank">Ichimaru Engineering Ltd.</a> All Rights Reserved. <span id="credit">Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a></span></p>
+        <p>&copy; <script type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://1maru.co.jp" target="_blank">株式会社一丸エンジニアリング</a> All Rights Reserved. <span id="credit">Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a></span></p>
 			</div>
 			
 		</div>
@@ -190,6 +194,22 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
+  <script>
+    $(function() {
+      var h = $(window).height();
+
+      $('#loader-bg, #loader').height(h).css('display','block');
+    });
+
+    $(function(){
+      setTimeout('stopload()',4400);
+    });
+
+    function stopload(){
+      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader').delay(600).fadeOut(300);
+    }
+  </script>
 	</body>
 </html>
 
