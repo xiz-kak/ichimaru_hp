@@ -1,16 +1,16 @@
 
 TITLE: 
-Lesser - Fully Responsive Free HTML5 template
+株式会社一丸エンジニアリングのHP
 
 AUTHOR:
-DESIGNED & DEVELOPED by FreeHTML5.co
+xiz-tky
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
-
+Website: http://1maru.co.jp
 
 CREDITS:
+
+FreeHTML5
+https://freehtml5.co/
 
 Bootstrap
 http://getbootstrap.com/
@@ -21,26 +21,11 @@ http://jquery.com/
 jQuery Easing
 http://gsgd.co.uk/sandbox/jquery/easing/
 
-Modernizr
-http://modernizr.com/
-
-Google Fonts
-https://www.google.com/fonts/
+jQuery Cookie
+https://github.com/carhartl/jquery-cookie
 
 Google Map
 https://maps.google.com
 
-Icomoon
-https://icomoon.io/app/
-
 Respond JS
 https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-
-animate.css
-http://daneden.me/animate
-
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
-
-Demo Images:
-http://unplash.com
