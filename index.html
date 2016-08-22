@@ -193,12 +193,20 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<!-- jQuery cookie -->
+  <script src="./js/jquery.cookie.js"></script>
 
   <script>
     $(function() {
+      if ($.cookie('opening_showed') == '1') {
+        return;
+      }
       var h = $(window).height();
 
       $('#loader-bg, #loader').height(h).css('display','block');
+      date = new Date();
+      date.setTime( date.getTime() + ( 5 * 60 * 1000 ));
+      $.cookie('opening_showed', '1', { expires: date });
     });
 
     $(function(){
