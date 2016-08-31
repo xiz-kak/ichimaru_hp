@@ -106,6 +106,18 @@ blockquote {
   background: rgba(89, 89, 89, 0.97);
   z-index: 10;
 }
+
+a.close {
+  font-size: 80px;
+  font-weight: lighter;
+  color: white;
+  padding: 20px 40px;
+}
+
+a.close:hover {
+  color: white;
+}
+
 #loader {
   display: none;
   position: fixed;

@@ -70,6 +70,7 @@
 	
 	<div id="fh5co-page">
 	<div id="loader-bg">
+    <a href="#" class="close" onclick="stopload(true);">&times;</a>
 	  <div id="loader">
 	  	<img src="images/animation_opening.gif" width="480" height="151" alt="Now Loading..." />
 	  </div>
@@ -210,12 +211,17 @@
     });
 
     $(function(){
-      setTimeout('stopload()',4500);
+      setTimeout('stopload(false)',4500);
     });
 
-    function stopload(){
-      $('#loader-bg').delay(700).fadeOut(800);
-      $('#loader').delay(800).fadeOut(600);
+    function stopload(quick){
+      if (quick) {
+        $('#loader-bg').delay(100).fadeOut(200);
+        $('#loader').delay(200).fadeOut(50);
+      } else {
+        $('#loader-bg').delay(900).fadeOut(1000);
+        $('#loader').delay(1000).fadeOut(800);
+      }
     }
   </script>
 	</body>
