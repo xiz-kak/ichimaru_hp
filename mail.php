@@ -270,7 +270,7 @@ p.error_messe{
 <?php echo confirmOutput($_POST);//入力内容を表示?>
 </table>
 <p align="center"><input type="hidden" name="mail_set" value="confirm_submit">
-<input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
+<input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER'] ?? '');?>">
 <input type="submit" value="　送信する　">
 <input type="button" value="前画面に戻る" onClick="history.back()"></p>
 </form>
@@ -374,7 +374,6 @@ function postToMail($arr){
 			$out = rtrim($out,', ');
 			
 		}else{ $out = $val; }//チェックボックス（配列）追記ここまで
-		if(get_magic_quotes_gpc()) { $out = stripslashes($out); }
 		
 		//全角→半角変換
 		if($hankaku == 1){
@@ -404,7 +403,6 @@ function confirmOutput($arr){
 			$out = rtrim($out,', ');
 			
 		}else{ $out = $val; }//チェックボックス（配列）追記ここまで
-		if(get_magic_quotes_gpc()) { $out = stripslashes($out); }
 		$out = nl2br(h($out));//※追記 改行コードを<br>タグに変換
 		$key = h($key);
 		
@@ -558,7 +556,7 @@ function requireCheck($require){
 //リファラチェック
 function refererCheck($Referer_check,$Referer_check_domain){
 	if($Referer_check == 1 && !empty($Referer_check_domain)){
-		if(strpos($_SERVER['HTTP_REFERER'],$Referer_check_domain) === false){
+		if(strpos($_SERVER['HTTP_REFERER'] ?? '',$Referer_check_domain) === false){
 			return exit('<p align="center">リファラチェックエラー。フォームページのドメインとこのファイルのドメインが一致しません</p>');
 		}
 	}
